@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- 
+        Creation of the Drug Interaction HTML for Python Webserver
+        Author: James Laurence
+        Team Members:
+        Chris Whalen
+        Louise Fear
+        Gabriela Mkonde
+        James Laurence
+        Date: April 8th, 2024
+        INFT3000 
+    -->
+
+    <meta charset="UTF-8">
+    <title>Database Query</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        function clearForm() {
+            document.getElementById("drug_name1").value = '';
+            document.getElementById("drug_name2").value = '';
+            document.getElementById("drug_interaction_info").value = '';
+            document.getElementById("food_interaction_info").value = '';
+            document.getElementById("food_checkbox").checked = false;
+        }
+    </script>
+</head>
+<body>
+    <div class="headings">
+        <H1 class="h1headings">Drug Interaction Database Query Engine</H1>
+        <H2 class="h2heading1">Which Interactions Are You Interested In?</H2>
+    </div>
+    <div class="form-container">
+        <form method="POST" class="drug-form">
+            <div class="input-group">
+                <label for="drug_name1" class="input-label">Enter Drug Name 1:</label>
+                <input type="text" id="drug_name1" name="drug_name1" class="input-field" value="{{ drug_name1 }}">&emsp;&emsp;
+            </div>
+
+            <div class="input-group">
+                <label for="drug_name2" class="input-label">Enter Drug Name 2:</label>
+                <input type="text" id="drug_name2" name="drug_name2" class="input-field" value="{{ drug_name2 }}">
+            </div><br>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="food_checkbox" name="food_checkbox" class="checkbox" {{ 'checked' if check_for_food }}>
+                <label for="food_checkbox" class="checkbox-label">Check for Food Interactions</label>
+            </div>
+
+            <div class="buttons-group">
+                <input type="submit" value="Submit" class="submit-button">
+                <button type="button" onclick="clearForm()" class="clear-button">Clear</button>
+            </div>
+        </form>
+    </div>
+    <div class="headings">
+        <H2 class="h2heading2">Interaction Results:</H2>
+    </div>
+    <div class="interaction-info">
+        <label for="drug_interaction_info" class="info-label">Drug Interaction Info:</label>
+        <textarea id="drug_interaction_info" name="drug_interaction_info" readonly style= "width: 60%">
+            {{ drug_interaction_info }}
+            </textarea>
+    </div>
+
+    <div class="interaction-info">
+        <label for="food_interaction_info" class="info-label">Food Interaction Info:</label>
+        <textarea id="food_interaction_info" name="food_interaction_info" readonly style= "width: 60%">
+            {{ food_interaction_info }}
+            </textarea>
+	</div>
+    <div class="image-container">
+        <img src="{{ url_for('static', filename='druginteration.jpg') }}" alt="Drug Interaction Image">
+    </div>
+</body>
+</html>

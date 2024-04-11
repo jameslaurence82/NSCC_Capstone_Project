@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+
+.h1headings {
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+    background-color: lightcyan;
+    padding: 5px;
+    margin-bottom: 10px; /* Reduced space below H1 */
+    width: 60%; /* Adjust width to account for padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h2heading1 {
+    text-align: center;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: lightcyan;
+    padding: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 10px; /* Reduced space around H2 */
+    width: 60%; /* Adjust width to account for padding */
+    font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+	
+.h2heading2 {
+    text-align: center;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: lightcyan;
+    padding: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 10px; /* Reduced space around H2 */
+    width: 60%; /* Adjust width to account for padding */
+    font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.input-group, .checkbox-group {
+    margin-bottom: 10px;
+    display: inline-block;
+	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+.buttons-group {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.interaction-info {
+    text-align: left;
+    margin: 10px 0;
+	font-size:20px;
+}
+
+.info-label {
+    display: block;
+    margin:auto;
+	padding-left: 300px;
+	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+	font-size:20px;
+}
+
+textarea {
+    text-align: left;
+    width: 60%; /* Adjust width to account for padding */
+    height: auto; /* Adjust height automatically */
+    box-sizing: border-box;
+    display: block;
+    margin: auto; /* Align with the label */
+    resize: vertical; /* Allow vertical resizing only */
+	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+	font-size:18px;
+}
+
+.image-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.image-container img {
+    max-width: 60%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display to enable margin auto */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.checkbox-label {
+	font-size: 1.25rem;
+}
+
+.input-field,
+.submit-button,
+.clear-button,
+.checkbox-group { /* Corrected the class name */
+    padding: 10px; /* Increase padding for larger size */
+    font-size: 15px; /* Increase font size for better visibility */
+    margin: 5px 0; /* Add some margin for spacing */
+}
+
