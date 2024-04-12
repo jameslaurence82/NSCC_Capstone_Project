@@ -76,7 +76,9 @@ def index():
         drug_name1=drug_name1,
         drug_name2=drug_name2,
         drug_interaction_info=drug_interaction_info or "No Known Drug Interactions",
-        food_interaction_info=food_interaction_info or "No Known Food Interactions")
+        food_interaction_info=food_interaction_info or "No Known Food Interactions",
+        check_for_food=check_for_food)
+
 
 def get_drug_id(drug_name):
     """Function to fetch a drug's ID by its official or generic name."""
