@@ -4,6 +4,15 @@ body {
     box-sizing: border-box;
 }
 
+.buttons-group {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.form-container {
+    text-align: center;
+}
+
 .h1headings {
 	margin: 0 auto;
 	margin-left: auto;
@@ -42,20 +51,11 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
 }
 
-.form-container {
-    text-align: center;
-}
-
 .input-group, .checkbox-group {
     margin-bottom: 10px;
     display: inline-block;
 	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
 	font-size:20px;
-}
-
-.buttons-group {
-    display: inline-block;
-    margin: 0 10px;
 }
 
 .interaction-info {
@@ -72,18 +72,6 @@ body {
 	font-size:20px;
 }
 
-textarea {
-    text-align: left;
-    width: 60%; /* Adjust width to account for padding */
-    height: auto; /* Adjust height automatically */
-    box-sizing: border-box;
-    display: block;
-    margin: auto; /* Align with the label */
-    resize: vertical; /* Allow vertical resizing only */
-	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
-	font-size:18px;
-}
-
 .image-container {
     text-align: center;
     padding: 20px 0;
@@ -94,6 +82,17 @@ textarea {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Block display to enable margin auto */
     margin: 0 auto; /* Center the image horizontally */
+}
+textarea {
+    text-align: left;
+    width: 60%; /* Adjust width to account for padding */
+    height: auto; /* Adjust height automatically */
+    box-sizing: border-box;
+    display: block;
+    margin: auto; /* Align with the label */
+    resize: vertical; /* Allow vertical resizing only */
+	font-family: Georgia, 'Times New Roman', Times, serif, Helvetica, sans-serif;
+	font-size:18px;
 }
 
 .checkbox-label {
